@@ -30,7 +30,7 @@
 .searchListBottom .labelList i.c-e70016{ color: #e50015}
 .searchLayerCon{position: fixed;top: 0; left: 0; width: 100%; height: 100%; z-index: 16; display: none}
 .layerBack{ position: fixed;top: 0; left: 0; width: 100%;z-index: 16; background: rgba(0,0,0,0.5); height: 100%; }
-.searchLayer{ position: fixed; top: 2.45rem; left: 0; width: 100%; background: #fff; height: 12rem; overflow: hidden; z-index: 18;}
+.searchLayer{ position: fixed; top: 2.45rem; left: 0; width: 100%; background: #fff; height: 13rem; overflow: hidden; z-index: 18;}
 .searchLayer .leftOne,.searchLayer .leftTwo,.searchLayer .leftThree,.guildLayer .leftOne,.guildLayer .leftTwo{ width: 33%; float: left; background: #fff; height:100%; overflow: auto;} 
 .searchLayer .leftTwo,.guildLayer .leftTwo{background: #fafafa}
 .searchLayer .leftThree{width: 34%; background: #f5f5f5}
@@ -40,15 +40,15 @@
 .searchLayer .leftThree li.active{color: #e50015}
 .guildLayer .leftOne,.guildLayer .leftTwo{ width:50%;}
 .guildLayer .leftTwo li.active{color: #e50015}
-.moreScreenLayer .searchLayer{ height: 12.7rem}
+.searchLayer{ height: 13.3rem}
 .moreScreenList { width: 100%; display: inline-block;  background: #f5f5f5;float: left; overflow: auto; height: 10rem;}
 .moreScreenList li{ width: 100%; display: block; overflow: hidden; background: #fff; margin-bottom: .2rem}
 .moreScreenList li .title{ width: 100%; display: block; overflow: hidden; position: relative; padding:.3rem;border-bottom: 1px solid #f5f5f5;font-size: .4rem}
 .moreScreenList li .label{ padding: .15rem;width: 100%; display: block; overflow: hidden;}
 .moreScreenList li .label span{ margin: .15rem; display: inline-block; float: left; border: 1px solid #f5f5f5; border-radius: 4px; overflow: hidden; padding: .1rem .5rem; font-size: .36rem}
 .moreScreenList li .label span.active{ background: #e50015; color: #fff; border: 1px solid #e50015}
-.moreScreenLayer .vipTip{width: 100%; display: block; overflow: hidden; background: #f5eff0; padding:.3rem .2rem; color: #666; text-align: center; font-size: .4rem}
-.moreScreenLayer .vipTip a{ margin-right: .5rem; color: #e50015}
+ .vipTip{width: 100%; display: block; overflow: hidden; background: #f5eff0; padding:.5rem .2rem; color: #666; text-align: center; font-size: .4rem}
+.vipTip a{ margin-right: .5rem; color: #e50015}
 /*登录*/
 .headerBg{ background: #e50015; border-bottom: 0}
 .headerBg .headerIco,.headerBg .headTit{ color: #fff}
@@ -225,17 +225,17 @@
 
 
 /*wxs*/
-.statisticsResult2 { top: 1.29rem;}
+.statisticsResult2 { top: 1.5rem;}
 .searchListMargin2{margin-top: 2.3rem;}
 .creditLine { padding: .3rem .4rem .2rem;width: 100%; border-top: 1px solid #f5f5f5;}
 .creditBtton { background: #ff7e00;color: #fff; font-size: .4rem; width: 50%; margin: 0 auto .4rem auto; text-align: center;padding: .2rem; border-radius: 3px; }
 .creditBtton2 { font-size: .32rem; width: auto; margin: .26rem 0;padding: .1rem .2rem;}
 .credit .title{ line-height: 1.1rem; font-size:.46rem; font-weight: 400; color: #353535; display: inline-block; } 
 .credit .Add { display: inline-block; margin-left: 3%; color: #a6a6a6;}
-.creditList{ width: 100%; display: block; background: none !important}
+.creditList{ width: 100%; display: block; background: none !important;padding-top: .3rem}
 .creditList::before,.creditList::after{ display: none}
 .creditList li{ width: 100%; display: block; background: #fff; margin-bottom: .2rem; overflow: hidden;padding: .3rem;}
-.creditList li .title {font-size:.42rem; font-weight: 400; color: #353535; float: left; margin: .1rem .3rem;}
+.creditList li .title {font-size:.42rem; font-weight: 400; color: #353535; float: left; margin: 0rem .3rem;}
 .creditFour { display: inline-block;width: 100%;}
 .creditFour li { display: inline-block;width: 33.33333%; float: left;padding: .3rem .1rem 0; margin: 0; text-align: center;font-size: .32rem;}
 .creditFour input { display: none;}

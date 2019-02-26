@@ -82,7 +82,7 @@
 			<div class="indexHeadlines">
 				<h5 class="HeadlinesTitle">信用头条</h5>
 				<ul class="HeadlinesList" v-infinite-scroll="loadMore" infinite-scroll-disabled="loading">
-					<!-- <li class="itemR" v-for="(item,index) in pageList" :key="index">
+					<li class="itemR" v-for="(item,index) in pageList" :key="index">
 						<a href="javascript:;" class="HeadlinesListItem">
 							<div class="photo fl mrb3"><img :src="item.img"></div>
 							<h5 class="title">{{item.title}}</h5>
@@ -92,39 +92,39 @@
 								<span class="number"><i class="iconfont">&#xe612;</i><em>{{item.lookNum}}人阅读</em></span>
 							</div>
 						</a>
+					</li>
+					<!-- <li>
+						<a href="javascript:;" class="HeadlinesListItem">
+							<div class="photo fr mlb3"><img src="/static/images/pic-3.jpg"></div>
+							<h5 class="title">陆股通大胆抄底 多家公司信用评级被下调</h5>
+							<p class="info">陆股通一季度新进116家上市公司前十大流通股东陆股通一季度新进116家上市公司的前十大流通股东...</p>
+							<div class="bottom">
+								<span class="time">2019-02-16</span>
+								<span class="number"><i class="iconfont">&#xe612;</i><em>168人阅读</em></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="HeadlinesListItem">
+							<div class="photo fr mlb3"><img src="/static/images/pic-3.jpg"></div>
+							<h5 class="title">陆股通大胆抄底 多家公司信用评级被下调</h5>
+							<p class="info">陆股通一季度新进116家上市公司前十大流通股东陆股通一季度新进116家上市公司的前十大流通股东...</p>
+							<div class="bottom">
+								<span class="time">2019-02-16</span>
+								<span class="number"><i class="iconfont">&#xe612;</i><em>168人阅读</em></span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="HeadlinesListItem">
+							<h5 class="title">陆股通大胆抄底 多家公司信用评级被下调</h5>
+							<p class="info">陆股通一季度新进116家上市公司前十大流通股东陆股通一季度新进116家上市公司的前十大流通股东...</p>
+							<div class="bottom">
+								<span class="time">2019-02-16</span>
+								<span class="number"><i class="iconfont">&#xe612;</i><em>168人阅读</em></span>
+							</div>
+						</a>
 					</li> -->
-					<li>
-						<a href="javascript:;" class="HeadlinesListItem">
-							<div class="photo fr mlb3"><img src="/static/images/pic-3.jpg"></div>
-							<h5 class="title">陆股通大胆抄底 多家公司信用评级被下调</h5>
-							<p class="info">陆股通一季度新进116家上市公司前十大流通股东陆股通一季度新进116家上市公司的前十大流通股东...</p>
-							<div class="bottom">
-								<span class="time">2019-02-16</span>
-								<span class="number"><i class="iconfont">&#xe612;</i><em>168人阅读</em></span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;" class="HeadlinesListItem">
-							<div class="photo fr mlb3"><img src="/static/images/pic-3.jpg"></div>
-							<h5 class="title">陆股通大胆抄底 多家公司信用评级被下调</h5>
-							<p class="info">陆股通一季度新进116家上市公司前十大流通股东陆股通一季度新进116家上市公司的前十大流通股东...</p>
-							<div class="bottom">
-								<span class="time">2019-02-16</span>
-								<span class="number"><i class="iconfont">&#xe612;</i><em>168人阅读</em></span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;" class="HeadlinesListItem">
-							<h5 class="title">陆股通大胆抄底 多家公司信用评级被下调</h5>
-							<p class="info">陆股通一季度新进116家上市公司前十大流通股东陆股通一季度新进116家上市公司的前十大流通股东...</p>
-							<div class="bottom">
-								<span class="time">2019-02-16</span>
-								<span class="number"><i class="iconfont">&#xe612;</i><em>168人阅读</em></span>
-							</div>
-						</a>
-					</li>
 				</ul>
 			</div>
 		</section>
@@ -144,40 +144,34 @@
 			return {
 				pageList: [
 					{
-					title: "111",
-					info: "222",
+					title: "陆股通大胆抄底 多家公司信用评级被下调",
+					info: "陆股通一季度新进116家上市公司前十大流通股东陆股通一季度新进116家上市公司的前十大流通股东...",
 					time: "2019-02-01",
 					lookNum: "168",
 					img: "/static/images/pic-3.jpg"
 				},
 				{
-					title: "111",
-					info: "222",
+					title: "陆股通大胆抄底 多家公司信用评级被下调",
+					info: "陆股通一季度新进116家上市公司前十大流通股东陆股通一季度新进116家上市公司的前十大流通股东...",
 					time: "2019-02-01",
 					lookNum: "168",
 					img: "/static/images/pic-3.jpg"
 				},
 				{
-					title: "111",
-					info: "222",
+					title: "陆股通大胆抄底 多家公司信用评级被下调",
+					info: "陆股通一季度新进116家上市公司前十大流通股东陆股通一季度新进116家上市公司的前十大流通股东...",
 					time: "2019-02-01",
 					lookNum: "168",
 					img: "/static/images/pic-3.jpg"
 				},
 				{
-					title: "111",
-					info: "222",
+					title: "陆股通大胆抄底 多家公司信用评级被下调",
+					info: "陆股通一季度新进116家上市公司前十大流通股东陆股通一季度新进116家上市公司的前十大流通股东...",
 					time: "2019-02-01",
 					lookNum: "168",
 					img: "/static/images/pic-3.jpg"
 				},
-				{
-					title: "111",
-					info: "222",
-					time: "2019-02-01",
-					lookNum: "168",
-					img: "/static/images/pic-3.jpg"
-				},
+				
 				],
 				loading:false
 			}

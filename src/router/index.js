@@ -7,6 +7,7 @@ Vue.use(Router)
 export default new Router({
 	routes: [{
 			path: '/',
+			redirect: "/home",
 			name: 'HelloWorld',
 			component: HelloWorld
 		},
@@ -46,10 +47,18 @@ export default new Router({
 		{
 			path: '/my',
 			name: 'my',
-			redirect: "/login",
+			// redirect: "/login",
 			component: () => import("@/views/my/index.vue"),
 			meta: {
 				title: "个人中心"
+			},
+		},
+		{
+			path: '/userInfo',
+			name: 'userInfo',
+			component: () => import("@/views/my/userInfo.vue"),
+			meta: {
+				title: "个人信息"
 			}
 		},
 		{
@@ -77,6 +86,22 @@ export default new Router({
 			}
 		},
 		{
+			path: '/editPwd',
+			name: 'editPwd',
+			component: () => import("@/views/my/password/editPwd.vue"),
+			meta: {
+				title: "密码设置"
+			}
+		},
+		{
+			path: '/findPwd',
+			name: 'findPwd',
+			component: () => import("@/views/my/password/findPwd.vue"),
+			meta: {
+				title: "密码设置"
+			}
+		},
+		{
 			path: '/searchList',
 			name: 'searchList',
 			component: () => import("@/views/search/searchList.vue"),
@@ -98,6 +123,62 @@ export default new Router({
 			component: () => import("@/views/creditZM/creditPay.vue"),
 			meta: {
 				title: "信用报告"
+			}
+		},
+		{
+			path: '/credit',
+			name: 'credit',
+			component: () => import("@/views/creditZM/credit.vue"),
+			meta: {
+				title: "信用报告"
+			}
+		},
+		{
+			path: '/myFocus',
+			name: 'myFocus',
+			component: () => import("@/views/my/myFocus.vue"),
+			meta: {
+				title: "我的关注"
+			}
+		},
+		{
+			path: '/myControl',
+			name: 'myControl',
+			component: () => import("@/views/my/myControl.vue"),
+			meta: {
+				title: "我的监控"
+			}
+		},
+		{
+			path: '/certification',
+			name: 'certification',
+			component: () => import("@/views/my/certification/certification.vue"),
+			meta: {
+				title: "认证管理"
+			}
+		},
+		{
+			path: '/toCertification',
+			name: 'toCertification',
+			component: () => import("@/views/my/certification/toCertification.vue"),
+			meta: {
+				title: "认证管理"
+			}
+		},
+		{
+			path: '/myCredit',
+			name: 'myCredit',
+			component: () => import("@/views/my/myCredit.vue"),
+			meta: {
+				title: "我的信用"
+			}
+		},
+		{
+			path: '/submitRepair',
+			name: 'submitRepair',
+			component: () => import("@/views/my/submitRepair.vue"),
+			meta: {
+				title: "提交修复材料"
 			}
 		},
 	]

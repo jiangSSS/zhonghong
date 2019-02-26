@@ -208,7 +208,7 @@ p img{max-width: 50%;height: auto;}
 
 /*按钮*/
 .buttonBIg { width: 100%; padding:.25rem .35rem; z-index:50;}
-.buttonBIg a{ width: 100%;text-align: center; background: #e50015; color: #fff; display: block; font-weight: 400; border-radius: 5px; padding: .2rem 0; border: 1px solid #cb0013; font-size: .42rem; }
+.buttonBIg a{ width: 100%;text-align: center; background: #e50015; color: #fff; display: block; font-weight: 400; border-radius: 5px; padding: .3rem 0; border: 1px solid #cb0013; font-size: .42rem; }
 .buttonBIg a.shallow{background: #fee9eb; color: #333;  border: 1px solid #fed9dd; }
 .buttonBIg2{width: 92%; margin:5% 4%;border: 1px solid #dda264;padding: 2.5% 0;background: #e4ab67;color: #fff;display: inline-block;text-align: center;font-size: .44rem; font-weight: 400; border-radius: 5px;}
 .buttonBIg3{width:80%; margin:5% 10%;}

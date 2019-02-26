@@ -14,6 +14,10 @@ export default {
 <style>
 	#app{
 		background: #fff;
-	}
+  }
+  body{
+    background: #fff
+  }
+
 
 </style>
