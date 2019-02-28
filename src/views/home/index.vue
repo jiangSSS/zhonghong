@@ -181,7 +181,9 @@
 				
 			},
 			getData(){
-				
+				this.$axios.get(`/solr/qst_entfind_djg`).then(res=>{
+					console.log("11",res)
+				})
 			}
 		},
 		created(){

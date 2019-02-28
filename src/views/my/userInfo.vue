@@ -49,11 +49,10 @@
                         <input type="text" v-model="formData.password">
                     </li>
                 </ul>
+                <div class="tc">
+                    <van-button type="primary">提交</van-button>      
+                </div>
             </div>
-        </div>
-        <div>
-           
-
         </div>
     </div>
 </template>
@@ -115,5 +114,13 @@
     /deep/ .van-radio-group{
         display: flex;
         justify-content: space-around
+    }
+    /deep/ .van-button--primary{
+        width: 3rem;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        margin-top: .6rem;
+        border-radius: 10%;
+        
     }
 </style>

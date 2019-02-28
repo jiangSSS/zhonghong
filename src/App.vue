@@ -13,11 +13,15 @@ export default {
 
 <style>
 	#app{
-		background: #fff;
+    background: #fff;
+    font-family: "PingFang";
   }
   body{
-    background: #fff
+    background: #fff;
+    font-family: "PingFang";
   }
-
+  a{
+    color: #3f3f3f
+  }
 
 </style>

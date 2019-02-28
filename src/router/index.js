@@ -8,8 +8,6 @@ export default new Router({
 	routes: [{
 			path: '/',
 			redirect: "/home",
-			name: 'HelloWorld',
-			component: HelloWorld
 		},
 		// 		 {
 		//       path: "/",
@@ -150,6 +148,14 @@ export default new Router({
 			}
 		},
 		{
+			path: '/companyControl',
+			name: 'companyControl',
+			component: () => import("@/views/my/companyControl.vue"),
+			meta: {
+				title: "监控企业"
+			}
+		},
+		{
 			path: '/certification',
 			name: 'certification',
 			component: () => import("@/views/my/certification/certification.vue"),
@@ -168,7 +174,31 @@ export default new Router({
 		{
 			path: '/myCredit',
 			name: 'myCredit',
-			component: () => import("@/views/my/myCredit.vue"),
+			component: () => import("@/views/my/myCredit/myCredit.vue"),
+			meta: {
+				title: "我的信用"
+			}
+		},
+		{
+			path: '/education',
+			name: 'education',
+			component: () => import("@/views/my/myCredit/education.vue"),
+			meta: {
+				title: "教育经历"
+			}
+		},
+		{
+			path: '/work',
+			name: 'work',
+			component: () => import("@/views/my/myCredit/work.vue"),
+			meta: {
+				title: "工作经历"
+			}
+		},
+		{
+			path: '/myCreditAll',
+			name: 'myCreditAll',
+			component: () => import("@/views/my/myCredit/myCreditAll.vue"),
 			meta: {
 				title: "我的信用"
 			}
@@ -179,6 +209,38 @@ export default new Router({
 			component: () => import("@/views/my/submitRepair.vue"),
 			meta: {
 				title: "提交修复材料"
+			}
+		},
+		{
+			path: '/company',
+			name: 'company',
+			component: () => import("@/views/company/company.vue"),
+			meta: {
+				title: "企业"
+			}
+		},
+		{
+			path: '/messageCenter',
+			name: 'messageCenter',
+			component: () => import("@/views/my/messageCenter.vue"),
+			meta: {
+				title: "消息中心"
+			}
+		},
+		{
+			path: '/attestation',
+			name: 'attestation',
+			component: () => import("@/views/my/attestation/attestation.vue"),
+			meta: {
+				title: "认证管理"
+			}
+		},
+		{
+			path: '/attestationStatus',
+			name: 'attestationStatus',
+			component: () => import("@/views/my/attestation/attestationStatus.vue"),
+			meta: {
+				title: "认证管理"
 			}
 		},
 	]

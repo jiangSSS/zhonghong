@@ -1,7 +1,10 @@
 <template>
 	<div>
 		<Header></Header>
+			<!-- <img src="/static/images/logo/icon-35.png" alt="" class="logo"> -->
+
 		<div class="statisticsResult statisticsResult2">为你找到<i class="c-e70016">1258</i>家公司</div>
+			
 		<div id="creditZMList" class="mui-scroll-wrapper mui-active searchListMargin searchListMargin2">
 			<div class="mui-scroll">
 				<!-- <ul class="HeadlinesList" v-infinite-scroll="loadMore" infinite-scroll-disabled="loading"> -->
@@ -16,6 +19,7 @@
 							</div>
 						</a>
 					</li> -->
+			
 				<div v-infinite-scroll="loadMore" infinite-scroll-disabled="loading">
 					<div class="pageListBox" v-for="(item,index) in pageList" :key="index">
 						<div class="searchListTop">
@@ -41,6 +45,7 @@
 						<div class="creditBtton" @click="$router.push('/creditPay')">信用证明</div>
 					</div>
 				</div>
+				<img src="/static/images/icon-35.png" class="logo">
 			</div>
 		</div>
 	</div>

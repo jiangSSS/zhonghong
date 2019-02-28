@@ -23,10 +23,10 @@
                 </router-link>
             </li>
             <li>
-                <a href="javascript:;">
+                <router-link :to="{name:'home'}">
                     <img src="/static/images/icon-56.png">
                     <p>我的订单</p>
-                </a>
+                </router-link>
             </li>
             <li>
                 <router-link :to="{name:'myFocus'}">
@@ -47,22 +47,22 @@
                 </router-link>
             </li>
             <li>
-                <a href="javascript:;">
+                <router-link :to="{name:'messageCenter'}">
                     <img src="/static/images/icon-60.png">
                     <p>消息中心</p>
-                </a>
+                </router-link>
             </li>
             <li>
-                <a href="javascript:;">
+                <router-link :to="{name:'home'}">
                     <img src="/static/images/icon-61.png">
                     <p>发票管理</p>
-                </a>
+                </router-link>
             </li>
             <li>
-                <a href="javascript:;">
+                <router-link :to="{name:'attestation'}">
                     <img src="/static/images/icon-53.png">
                     <p>认证管理</p>
-                </a>
+                </router-link>
             </li>
         </ul>
 		 <img src="/static/images/setting.png" class="setting">
@@ -142,7 +142,7 @@
 	/* -------------------------- */
 	.indexNavBox{ width: 100%; display: block; overflow: hidden; border-bottom: 3px solid #f3f3f3; background: #fff}
 	.indexNavBox li{ width: 25%; float: left; border-bottom: 1px solid #f3f3f3; text-align: center; height: 2.7rem;}
-	.indexNavBox li img{ width:.88rem; margin-top: .54rem; margin-bottom: .05rem}
+	.indexNavBox li img{ width:.88rem;height: .88rem; margin-top: .54rem; margin-bottom: .05rem}
 	.indexNavBox li p{ color: #575757; font-size: .42rem}
 
 	.setting{

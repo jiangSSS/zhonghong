@@ -22,8 +22,8 @@
 				</ul>
 			</div>
 			<div class="loginLabel">
-				<span class="left" @click="checked = false" v-if="!checked"><i style="color: #f00;" class="iconfont">&#xe9ed;</i><em>我已阅读并同意<span>《信用查服务协议》</span></em></span>
-				<span class="left" @click="checked = true" v-else><i class="iconfont">&#xe9e9;</i><em>我已阅读并同意<span>《信用查服务协议》</span></em></span>
+				<span class="left" @click="checked = false" v-if="checked"><i  class="iconfont">&#xe9e9;</i><em>我已阅读并同意<span>《信用查服务协议》</span></em></span>
+				<span class="left" @click="checked = true" v-else><i style="color: #f00;" class="iconfont">&#xe9ed;</i><em>我已阅读并同意<span>《信用查服务协议》</span></em></span>
 			</div>
 
 			<div class="wb100 dis-ib tc mtb5">

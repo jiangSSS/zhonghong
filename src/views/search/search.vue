@@ -181,7 +181,8 @@
 					<i>{{item.low3}}</i>
 				</span>
 			</div> -->
-				<div class="searchListTop">
+				<div @click="$router.push('/company')">
+					<div class="searchListTop">
 					<div class="photo">
 						<img :src="item.img">
 					</div>
@@ -205,6 +206,7 @@
 						<em>成立日期</em>
 						<i>{{item.low3}}</i>
 					</span>
+				</div>
 				</div>
 			</div>
 		</div>
